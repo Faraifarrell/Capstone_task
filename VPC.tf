@@ -78,7 +78,7 @@ resource "aws_route_table" "RB_Public_RouteTable" {
   vpc_id = aws_vpc.dev_vpc.id
 
   route {
-    cidr_block = var.CIDR_BLOCK
+    cidr_block = 10.0.0.0/16
     gateway_id = aws_internet_gateway.igw.id
   }
   tags = {
