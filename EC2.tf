@@ -8,10 +8,11 @@ data "aws_ami" "amazon_linux" {
 
   filter {
     name   = "name"
-    values = ["al2023-ami-2023*x86_64"]
+    values = ["amzn2-ami-hvm-*-x86_64-gp2"]
   }
 }
 
+# Create EC2 instance for WordPress with user data 
 resource "aws_instance" "wordpress_instance" {
   ami                         = data.aws_ami.amazon_linux.id
   instance_type               = var.ec2_instance_type
@@ -30,7 +31,7 @@ resource "aws_instance" "wordpress_instance" {
 
 
 }
-
+# User data for EC2 instance to connect to RDS 
 data "template_file" "userdataEC" {
   template = file("UserDataEC2.sh")
 

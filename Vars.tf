@@ -1,6 +1,6 @@
 #You can provide Date value if need to know when its created and what is happening
 variable "tagNameDate" {
-  default = ""
+  default = "16-7-24"
 }
 
 # VPC Variables
@@ -38,9 +38,11 @@ variable "key_name" {
 
 variable "rds_username" {
   description = "The username for the RDS instance"
+  default     = "faraifara"
 }
 variable "rds_password" {
   description = "The password for the RDS instance"
+  default     = "rootpassword#123"
   sensitive   = true
 }
 variable "rds_db_name" {
@@ -58,13 +60,10 @@ variable "LabRoleARN" {
   default     = "arn:aws:iam::891377082491:role/LabRole"
 }
 
-variable "tagNameDate" {
-  default = "2024-04-12"
-}
 
 
 #S3 bucket Name
 variable "s3_bucket_name" {
   description = "Name of the S3 bucket"
-  default     = "s3-bucket"
+  default     = "s3-bucket-16-7-24"
 }
