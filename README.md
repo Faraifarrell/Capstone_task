@@ -1,4 +1,4 @@
-##### WordPress Solution in EC2 (Creating a Resilient and Scalable System)
+#### WordPress Solution in EC2 (Creating a Resilient and Scalable System)
 
 ## Project Overview
 This project provides a resilient and scalable WordPress setup on AWS using Terraform for infrastructure provisioning. It ensures high availability, scalability, and efficient resource management by integrating EC2 instances, an Application Load Balancer (ALB), Auto Scaling Group (ASG), and Amazon RDS.
