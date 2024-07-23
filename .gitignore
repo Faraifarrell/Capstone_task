@@ -48,3 +48,4 @@ secrets.json
 # Docker Files
 docker-compose.override.yml
 .docker/
+.terraform/providers/registry.terraform.io/hashicorp/aws/5.58.0/windows_amd64/terraform-provider-aws_v5.58.0_x5.exe
